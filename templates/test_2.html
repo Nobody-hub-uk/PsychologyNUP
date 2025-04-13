@@ -1,0 +1,375 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Тест_1
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="container">
+        <h1>Методика М. Селигмана "Уровень оптимизма"</h1>
+        
+        <form id="testForm">
+            <!-- Вопросы первой группы (вычитаемые) -->
+            <!-- Вопрос 2 -->
+            
+            <div class="test">
+                <h3>1. Вы и ваш(а) друг/подруга миритесь после ссоры.</h3>
+                <label><input type="radio" name="q1" value="0"> А. Сегодня мне удалось уладить конфликт.</label>
+                <label><input type="radio" name="q1" value="1"> Б. Обычно я легко улаживаю конфликты.</label>
+            </div>
+
+            <!-- Вопрос 10 -->
+            <div class="test">
+                <h3>2. Организованный вами вечер прошел удачно.</h3>
+                <label><input type="radio" name="q2" value="0"> А. Сегодня я был(а) самое обаяние</label>
+                <label><input type="radio" name="q2" value="1"> Б. Я - хороший хозяин(хозяйка).</label>
+            </div>
+            <!-- Вопрос 14 -->
+            <div class="test">
+                <h3>3. Вы хорошо заработали на акциях.</h3>
+                <label><input type="radio" name="q3" value="0"> А. Мой брокер решил попробовать что-нибудь новенькое.</label>
+                <label><input type="radio" name="q3" value="1"> Б. Мой брокер - отличный инвестор.</label>
+            </div>
+            <!-- Вопрос 15 -->
+            <div class="test">
+                <h3>4. Вы победили в спортивном соревновании.</h3>
+                <label><input type="radio" name="q4" value="0"> А. Я чувствовал(а) себя непобедимым.</label>
+                <label><input type="radio" name="q4" value="1"> Б. Я упорно тренировался.</label>
+            </div>
+            <!-- Вопрос 24 -->
+            <div class="test">
+                <h3>5. На вечеринке вас часто приглашали на танец.</h3>
+                <label><input type="radio" name="q5" value="1"> А. Я имею успех на вечеринках.</label>
+                <label><input type="radio" name="q5" value="0"> Б. Этим вечером я хорошо выглядел(а).</label>
+            </div>
+            <!-- Вопрос 26 -->
+            <div class="test">
+                <h3>6. Собеседование по поводу работы прошло очень хорошо.</h3>
+                <label><input type="radio" name="q6" value="0"> А. Я чувствовал(а) себя очень уверенно во время собеседования.</label>
+                <label><input type="radio" name="q6" value="1"> Б. Собеседование даются мне легко.</label>
+            </div>
+            <!-- Вопрос 38 -->
+            <div class="test">
+                <h3>7. Ваш(а) супруг(а) или друг/подруга приглашает вас на романтический уик-энд.</h3>
+                <label><input type="radio" name="q7" value="1"> А. Ему(ей) нужно уехать куда-нибудь на несколько дней.</label>
+                <label><input type="radio" name="q7" value="0"> Б. Он(а) любит посещать новые места.</label>
+            </div>
+            <!-- Вопрос 40 -->
+            <div class="test">
+                <h3>8. Вас просят возглавить важный проект.</h3>
+                <label><input type="radio" name="q8" value="0"> А. У меня есть успешный опыт выполнения подобного проекта.</label>
+                <label><input type="radio" name="q8" value="1"> Б. Я - хороший руководитель.</label>
+            </div>
+            <!-- Вопрос 6 -->
+            <div class="test">
+                <h3>9. Вы получили подарок от таинственного(-ой) поклонника(-цы).</h3>
+                <label><input type="radio" name="q9" value="0"> А. Я кажусь ему(ей) привлекаательной(-ым).</label>
+                <label><input type="radio" name="q9" value="1"> Б. Я популярная личность.</label>
+            </div>
+            <!-- Вопрос 7 -->
+            <div class="test">
+                <h3>10. Вы боролись за выборный пост и победили.</h3>
+                <label><input type="radio" name="q10" value="0"> А. Я потратил(а) много времени и сил на избирательную кампанию.</label>
+                <label><input type="radio" name="q10" value="1"> Б. Я очень усерден(-на) во всем, что я делаю.</label>
+            </div>
+            <!-- Вопрос 28 -->
+            <div class="test">
+                <h3>11. Начальник дал вам очень мало времени на выполнение проекта, но вы все равно завершили его вовремя.</h3>
+                <label><input type="radio" name="q11" value="0"> А. Мне хорошо дается эта работа.</label>
+                <label><input type="radio" name="q11" value="1"> Б. Я работал(а) эффективно.</label>
+            </div>
+            <!-- Вопрос 31 -->
+            <div class="test">
+                <h3>12. Вам удалось спасти человека, который задыхался.</h3>
+                <label><input type="radio" name="q12" value="0"> А. Мне известна техника первой помощи в таких ситуациях.</label>
+                <label><input type="radio" name="q12" value="1"> Б. Я знаю, что делать в критических ситуациях.</label>
+            </div>
+            <!-- Вопрос 34 -->
+            <div class="test">
+                <h3>13. Ваш начальник обратился к вам за советом.</h3>
+                <label><input type="radio" name="q13" value="1"> А. Я специалист в той области, о которой шла речь.</label>
+                <label><input type="radio" name="q13" value="0"> Б. У меня для всех найдется полезный совет.</label>
+            </div>
+            <!-- Вопрос 35 -->
+            <div class="test">
+                <h3>14. Друг(подруга) благодарит вас за помощь, которую вы оказали ему(ей) в трудную минуту.</h3>
+                <label><input type="radio" name="q14" value="0"> А. Мне было приятно помочь ему(ей), когда он(а) оказался(-лась) в сложной ситуации.</label>
+                <label><input type="radio" name="q14" value="1"> Б. Я забочусь о людях.</label>
+            </div>
+            <!-- Вопрос 37 -->
+            <div class="test">
+                <h3>15. Доктор сказал, что вы находитесь в отличной физической форме.</h3>
+                <label><input type="radio" name="q15" value="0"> А. Я стараюсь чаще тренироваться.</label>
+                <label><input type="radio" name="q15" value="1"> Б. Я очень щепетилен(-льна) в вопросах здоровья.</label>
+            </div>
+            <!-- Вопрос 43 -->
+            <div class="test">
+                <h3>16. Вы получили престижную награду.</h3>
+                <label><input type="radio" name="q16" value="0"> А. Я нашел(-ла) решение серьезной проблемы.</label>
+                <label><input type="radio" name="q16" value="1"> Б. Я был(а) лучшим работником.</label>
+            </div>
+            <!-- Вопрос 45 -->
+            <div class="test">
+                <h3>17. Вы выиграли в лотерею.</h3>
+                <label><input type="radio" name="q17" value="0"> А. Мне просто повезло.</label>
+                <label><input type="radio" name="q17" value="1"> Б. Я выбрал(а) правильные номера.</label>
+            </div>
+            <!-- Вопрос 36 -->
+            <div class="test">
+                <h3>18. Вы прекрасно провели время на вечеринке.</h3>
+                <label><input type="radio" name="q18" value="0"> А. Все были очень дружелюбны.</label>
+                <label><input type="radio" name="q18" value="1"> Б. Я был(а) дружелюбно настроен(а).</label>
+            </div>
+            <!-- Вопрос 27 -->
+            <div class="test">
+                <h3>19. Вы рассказали анекдот, и все засмеялись.</h3>
+                <label><input type="radio" name="q19" value="0"> А. Анекдот был смешной.</label>
+                <label><input type="radio" name="q19" value="1"> Б. Я выбрал(а) подходящий момент.</label>
+            </div>
+            <!-- Вопрос 23 -->
+            <div class="test">
+                <h3>20. Ведущий телеигры из всей аудитории выбрал вас для участия в шоу.</h3>
+                <label><input type="radio" name="q20" value="0"> А. Я сидел(а) в нужном месте.</label>
+                <label><input type="radio" name="q20" value="1"> Б. Я выглядел(а) самым(-ой) увлеченным(-ой).</label>
+            </div>
+            <!-- Вопрос 12 -->
+            <div class="test">
+                <h3>21. Весь год вы были здоровы.</h3>
+                <label><input type="radio" name="q21" value="0"> А. Я почти не общался(-лась) с больными и избежал(а) инфекции.</label>
+                <label><input type="radio" name="q21" value="1"> Б. Я старался(-лась) правильно питаться и достаточно отдыхать.</label>
+            </div>
+            <!-- Вопрос 11 -->
+            <div class="test">
+                <h3>22. Вы предотвратили преступление тем, что вызвали полицию.</h3>
+                <label><input type="radio" name="q22" value="0"> А. Мое внимание привлек странный шум.</label>
+                <label><input type="radio" name="q22" value="1"> Б. В этот день я проявил(а) бдительность.</label>
+            </div>
+            <!-- Вопрос 4 -->
+            <div class="test">
+                <h3>23. Ваш(а) супруг(а) (друг/подруга) устраивают вам сюрприз.</h3>
+                <label><input type="radio" name="q23" value="0"> А. Он(а) получил(а) повышение.</label>
+                <label><input type="radio" name="q23" value="1"> Б. Я приглашал(а) ее(его) на ужин.</label>
+            </div>
+            <!-- Вопрос 1 -->
+            <div class="test">
+                <h3>24. Проект, которым вы руководили, оказался весьма успешным.</h3>
+                <label><input type="radio" name="q24" value="1"> А. Я грамотно организовал(а) работу команды.</label>
+                <label><input type="radio" name="q24" value="0"> Б. Успех стал возможен благодаря усилиям команды.</label>
+            </div>
+
+            
+            <!-- Остальные вопросы первой группы (...) -->
+            <!--Вопросы второй группы-->
+            <!-- Вопрос 5 -->
+            <div class="test">
+                <h3>25. Вы забыли про день рождения супруга(супруги) или друга(подруги).</h3>
+                <label><input type="radio" name="q25" value="1"> А. Я плохо запоминаю памятные даты.</label>
+                <label><input type="radio" name="q25" value="0"> Б. Голова была занята другими мыслями.</label>
+            </div>
+            
+            <!-- Вопрос 13 -->
+            <div class="test">
+                <h3>26. Вы не вернули вовремя книгу в библиотеку.</h3>
+                <label><input type="radio" name="q26" value="1"> А. Если я по-настоящему увлекаюсь чтением, то забываю, когда ее надо вернуть.</label>
+                <label><input type="radio" name="q26" value="0"> Б. Забыл(а) о сроках, так как был(а) занят(а) подготовкой отчета.</label>
+            </div>
+            <!-- Вопрос 20 -->
+            <div class="test">
+                <h3>27. Вы не сдержались и нагрубили другу(подруге).</h3>
+                <label><input type="radio" name="q27" value="1"> А. Он(а) всегда придирается ко мне.</label>
+                <label><input type="radio" name="q27" value="0"> Б. Он(а) был(а) враждебно настроен(а)</label>
+            </div>
+            <!-- Вопрос 21 -->
+            <div class="test">
+                <h3>28. Вы не сдали вовремя декларацию о доходах.</h3>
+                <label><input type="radio" name="q28" value="1"> А. Я постоянно откладываю дела, связанные с налогами.</label>
+                <label><input type="radio" name="q28" value="0"> Б. Мне было лень заполнять декларацию.</label>
+            </div>
+            <!-- Вопрос 22 -->
+            <div class="test">
+                <h3>29. Вы пригласили кого-то на свидание, но вам отказали.</h3>
+                <label><input type="radio" name="q29" value="1"> А. Наверное, я непривлекательный(-ая).</label>
+                <label><input type="radio" name="q29" value="0"> Б. Моя речь была неубедительна.</label>
+            </div>
+            <!-- Вопрос 25 -->
+            <div class="test">
+                <h3>30. Вы купили своей супруге(супругу) или подруге(другу) подарок, но он не понравился.</h3>
+                <label><input type="radio" name="q30" value="1"> А.Я купил(а) этот подарок не подумав.</label>
+                <label><input type="radio" name="q30" value="0"> Б. У нее(него) очень требовательный вкус.</label>
+            </div>
+            <!-- Вопрос 29 -->
+            <div class="test">
+                <h3>31. Последнее время вы чувствуете себя уставшим(-ей).</h3>
+                <label><input type="radio" name="q31" value="1"> А. Я никогда не могу найти время, чтобы расслабиться.</label>
+                <label><input type="radio" name="q31" value="0"> Б. Я был(а) очень загружен(а) на этой неделе.</label>
+            </div>
+            <!-- Вопрос 30 -->
+            <div class="test">
+                <h3>32. Вы пригласили кого-то на танец, но вам отказали.</h3>
+                <label><input type="radio" name="q32" value="1"> А. Я не очнь хорошо танцую.</label>
+                <label><input type="radio" name="q32" value="0"> Б. Он(а) не хотел(а) танцевать.</label>
+            </div>
+            <!-- Вопрос 32 -->
+            <div class="test">
+                <h3>33. Во время турпоездки вас поселили в плохой гостинице.</h3>
+                <label><input type="radio" name="q33" value="0"> А. В этот раз мне не повезло с турфирмой.</label>
+                <label><input type="radio" name="q33" value="1"> Б. Как правило, отдых мне не удается.</label>
+            </div>
+            <!-- Вопрос 33 -->
+            <div class="test">
+                <h3>34. Ваш(а) друг(подруга) сказал(а) что-то обидное.</h3>
+                <label><input type="radio" name="q34" value="1"> А. Он(а) всегда бросается фразами, не думая о других.</label>
+                <label><input type="radio" name="q34" value="0"> Б. У него(нее) было плохое настроение, и он(а) отыгрался(-лась) на мне.</label>
+            </div>
+            <!-- Вопрос 39 -->
+            <div class="test">
+                <h3>35. Доктор сказал, что вы едите слишком много сладкого.</h3>
+                <label><input type="radio" name="q35" value="1"> А. Я не очень внимательно слежу за своей диетой.</label>
+                <label><input type="radio" name="q35" value="0"> Б. Сахар есть во всем, от него возможно отказаться.</label>
+            </div>
+            <!-- Вопрос 41 -->
+            <div class="test">
+                <h3>36. Вы часто ссоритесь с супругом(супругой) или другом(подругой).</h3>
+                <label><input type="radio" name="q36" value="1"> А. Я чувствую себя раздражительной(-ым) и нервной(-ым) последнее время.</label>
+                <label><input type="radio" name="q36" value="0"> Б. Последнее время он(а) враждебно настроен(а).</label>
+            </div>
+            <!-- Вопрос 42 -->
+            <div class="test">
+                <h3>37. Катаясь на лыжах, вы много падаете.</h3>
+                <label><input type="radio" name="q37" value="1"> А. Катание на лыжах - не простое дело.</label>
+                <label><input type="radio" name="q37" value="0"> Б. Трасса обледенела.</label>
+            </div>
+            <!-- Вопрос 44 -->
+            <div class="test">
+                <h3>38. Ваши акции все время падают в цене.</h3>
+                <label><input type="radio" name="q38" value="1"> А. Я мало знаю о нынешней экономической ситуации.</label>
+                <label><input type="radio" name="q38" value="0"> Б. Я выбрал(а) неудачные акции.</label>
+            </div>
+            <!-- Вопрос 46 -->
+            <div class="test">
+                <h3>39. Вы набрали вес во время отпуска и теперь не можете его сбросить.</h3>
+                <label><input type="radio" name="q39" value="1"> А. Диеты в конечном счете не помогают.</label>
+                <label><input type="radio" name="q39" value="0"> Б. Диета, которой я воспользовался(-лась), не дала эффекта.</label>
+            </div>
+            <!-- Вопрос 47 -->
+            <div class="test">
+                <h3>40. Вы оказались в больнице, и вас почти никто не навещает.</h3>
+                <label><input type="radio" name="q40" value="1"> А. Я раздражительный(-ая), когда болею</label>
+                <label><input type="radio" name="q40" value="0"> Б. Мои друзья невнимательны в таких делах.</label>
+            </div>
+            <!-- Вопрос 48 -->
+            <div class="test">
+                <h3>41. Вас обманули.</h3>
+                <label><input type="radio" name="q41" value="1"> А. Я излишне доверчив(а).</label>
+                <label><input type="radio" name="q41" value="0"> Б. Я зря поверил(а) этому человеку.</label>
+            </div>
+            <!-- Вопрос 17 -->
+            <div class="test">
+                <h3>42. Вы приготовили особое блюдо для подруги(друга), а она(он) к нему почти не притронулась(-лся).</h3>
+                <label><input type="radio" name="q42" value="1"> А. Я не очень хороший повар.</label>
+                <label><input type="radio" name="q42" value="0"> Б. Я готовил(а) его в спешке.</label>
+            </div>
+            <!-- Вопрос 16 -->
+            <div class="test">
+                <h3>43. Вы провалили важный экзамен.</h3>
+                <label><input type="radio" name="q43" value="0"> А. Я не настолько умный(ая), как люди, сдававшие вместе со мной.</label>
+                <label><input type="radio" name="q43" value="1"> Б. Я плохо подготовился(-лась).</label>
+            </div>
+            <!-- Вопрос 18 -->
+            <div class="test">
+                <h3>44. Вы проиграли в спортивном соревновании, к которому долго готовились.</h3>
+                <label><input type="radio" name="q44" value="1"> А. У меня плохие спортивные задатки.</label>
+                <label><input type="radio" name="q44" value="0"> Б. Я не очень силен(-льна) в этом виде спорта.</label>
+            </div>
+            <!-- Вопрос 19 -->
+            <div class="test">
+                <h3>45. У вас в машине ножиданно кончился бензин.</h3>
+                <label><input type="radio" name="q45" value="1"> А. Я не проверил(а), сколько бензина осталось в баке.</label>
+                <label><input type="radio" name="q45" value="0"> Б. Счетчик расхода бензина был неисправен.</label>
+            </div>
+            <!-- Вопрос 3 -->
+            <div class="test">
+                <h3>46. Вы заблудились, когда ехали в гости к другу.</h3>
+                <label><input type="radio" name="q46" value="1"> А. Я пропустил(а) поворот.</label>
+                <label><input type="radio" name="q46" value="0"> Б. Мой друг плохо объяснил дорогу.</label>
+            </div>
+            <!-- Вопрос 8 -->
+            <div class="test">
+                <h3>47. Вы пропустили важную встречу.</h3>
+                <label><input type="radio" name="q47" value="1"> А. Иногда моя память подводит меня.</label>
+                <label><input type="radio" name="q47" value="0"> Б. Я иногда забываю проверить записи в дневнике.</label>
+            </div>
+            <!-- Вопрос 9 -->
+            <div class="test">
+                <h3>48. Вы участвовали в выборах на некую должность и проиграли.</h3>
+                <label><input type="radio" name="q48" value="1"> А. Я недостаточно сил вложил(а) в избирательную кампанию.</label>
+                <label><input type="radio" name="q48" value="0"> Б. Победил человек, у которого большие связи.</label>
+            </div>
+            
+            
+            
+            <!-- Остальные вопросы второй группы (...) -->
+            
+            <button type="button" id="submit-btn">Получить результат</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // Вопросы первой группы (вычитаемые)
+            const firstGroup = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+            // Вопросы второй группы (прибавляемые)
+            const secondGroup = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48];
+            
+            let firstSum = 0;
+            let secondSum = 0;
+            
+            // Считаем сумму по первой группе
+            firstGroup.forEach(q => {
+                const selected = document.querySelector(`input[name="q${q}"]:checked`);
+                if (selected) {
+                    firstSum += parseInt(selected.value);
+                }
+            });
+            
+            // Считаем сумму по второй группе
+            secondGroup.forEach(q => {
+                const selected = document.querySelector(`input[name="q${q}"]:checked`);
+                if (selected) {
+                    secondSum += parseInt(selected.value);
+                }
+            });
+            
+            // Вычисляем итоговый результат
+            const totalScore = secondSum - firstSum;
+            
+            // Интерпретация результатов
+            let interpretation = "";
+            if (totalScore >= 6) {
+                interpretation = "Вы уверенно оптимистичны.";
+            } else if (totalScore >=3) {
+                interpretation = "Промежуточный показатель.";
+            } else if (totalScore  >=1 ) {
+                interpretation = "Вы уверенно пессимистичны.";
+            } else {
+                interpretation = "Вы склонны к пессимизму.";
+            }
+            
+            // Показываем результат
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h2>Ваш результат: ${totalScore} баллов</h2>
+                <h2>${interpretation}</h2>
+            `;
+            resultDiv.style.display = 'block';
+            
+            // Прокручиваем страницу к результату
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+{% endblock %}

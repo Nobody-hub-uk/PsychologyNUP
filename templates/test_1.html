@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Тест_1
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="container">
+        <h1> Шкала безнадежности А. Бека.</h1>
+        <p>Ниже приводится 20 утверждений о Вашем будущем. Пожалуйста, прочтите
+            внимательно каждое и отметьте одно верное утверждение, которое наиболее точно
+            отражает Ваши чувства в настоящее время. нажмите на  ВЕРНО если Вы
+            согласны с утверждением или на слово НЕВЕРНО. Когда ответите на вопросы, нажимайте
+            на кнопку "Получить результат".
+        </p>
+
+        <form id="testForm">
+            <!--вопросы-->
+            <!--1-->
+            <div class="test">
+                <h3>1. Я жду будущего с надеждой и энтузиазмом.</h3>
+                <label><input type="radio" name="q1" value="1">Неверно.</label>
+                <label><input type="radio" name="q1" value="0">Верно.</label>
+            </div>
+            <!--2-->
+            <div class="test">
+                <h3>2. Мне пора сдаться, так как я ничего не могу изменить к лучшему.</h3>
+                <label><input type="radio" name="q2" value="0">Неверно.</label>
+                <label><input type="radio" name="q2" value="1">Верно.</label>
+            </div>
+            <!--3-->
+            <div class="test">
+                <h3>3. Когда дела идут плохо, мне помогает мысль, что так не может продолжаться всегда.</h3>
+                <label><input type="radio" name="q3" value="1">Неверно.</label>
+                <label><input type="radio" name="q3" value="0">Верно.</label>
+            </div>
+            <!--4-->
+            <div class="test">
+                <h3>4. Я не могу представить, на что будет похожа моя жизнь через 10 лет.</h3>
+                <label><input type="radio" name="q4" value="0">Неверно.</label>
+                <label><input type="radio" name="q4" value="1">Верно.</label>
+            </div>
+            <!--5-->
+            <div class="test">
+                <h3>5. У меня достаточно времени, что бы завершить дела, которыми я больше всего хочу заниматься.</h3>
+                <label><input type="radio" name="q5" value="1"> Неверно.</label>
+                <label><input type="radio" name="q5" value="0"> Верно.</label>
+            </div>
+            <!--6-->
+            <div class="test">
+                <h3>6. В будущем я надеюсь достичь успеха в том, что мне больше всего нравиться.</h3>
+                <label><input type="radio" name="q6" value="1">Неверно.</label>
+                <label><input type="radio" name="q6" value="0">Верно.</label>
+            </div>
+            <!--7-->
+            <div class="test">
+                <h3>7. Будущее представляеется мне во тьме.</h3>
+                <label><input type="radio" name="q7" value="0">Неверно.</label>
+                <label><input type="radio" name="q7" value="1">Верно.</label>
+            </div>
+            <!--8-->
+            <div class="test">
+                <h3>8. Я надеюсь получить в жизни больше хорошего, чем средний человек.</h3>
+                <label><input type="radio" name="q8" value="1">Неверно.</label>
+                <label><input type="radio" name="q8" value="0">Верно.</label>
+            </div>
+            <!--9-->
+            <div class="test">
+                <h3>9. У меня нет никаких просветов и нет причин верить , что они появятся в будущем.</h3>
+                <label><input type="radio" name="q9" value="0">Неверно.</label>
+                <label><input type="radio" name="q9" value="1">Верно.</label>
+            </div>
+            <!--10-->
+            <div class="test">
+                <h3>10. Мой прошлый опыт хорошо меня подготовил к будущему.</h3>
+                <label><input type="radio" name="q10" value="1">Неверно.</label>
+                <label><input type="radio" name="q10" value="0">Верно.</label>
+            </div>
+            <!--11-->
+            <div class="test">
+                <h3>11. Все, что я вижу впереди - скорее неприятности, чем радости.</h3>
+                <label><input type="radio" name="q11" value="0">Неверно.</label>
+                <label><input type="radio" name="q11" value="1">Верно.</label>
+            </div>
+            <!--12-->
+            <div class="test">
+                <h3>12. Я не надеюсь достичь того, чего действительно хочу.</h3>
+                <label><input type="radio" name="q12" value="0">Неверно.</label>
+                <label><input type="radio" name="q12" value="1">Верно.</label>
+            </div>
+            <!--13-->
+            <div class="test">
+                <h3>13. Когда я заглядываю в будущее, я надеюсь быть счастливее, чем я есть сейчас</h3>
+                <label><input type="radio" name="q13" value="1">Неверно.</label>
+                <label><input type="radio" name="q13" value="0">Верно.</label>
+            </div>
+            <!--14-->
+            <div class="test">
+                <h3>14. Дела идут не так, как мне хочется.</h3>
+                <label><input type="radio" name="q14" value="1">Неверно.</label>
+                <label><input type="radio" name="q14" value="0">Верно.</label>
+            </div>
+            <!--15-->
+            <div class="test">
+                <h3>15. Я сильно верю в свое будущее.</h3>
+                <label><input type="radio" name="q15" value="1">Неверно.</label>
+                <label><input type="radio" name="q15" value="0">Верно.</label>
+            </div>
+            <!--16-->
+            <div class="test">
+                <h3>16. Я никогда не достигаю того, что хочу поэтому глупо что-либо хотеть.</h3>
+                <label><input type="radio" name="q16" value="0">Неверно.</label>
+                <label><input type="radio" name="q16" value="1">Верно.</label>
+            </div>
+            <!--17-->
+            <div class="test">
+                <h3>17. Весьма маловероятно, чего я получу реальное удовлетворение в будущем.</h3>
+                <label><input type="radio" name="q17" value="0">Неверно.</label>
+                <label><input type="radio" name="q17" value="1">Верно.</label>
+            </div>
+            <!--18-->
+            <div class="test">
+                <h3>18. Будущее представляется мне расплывчатым и неопределенным.</h3>
+                <label><input type="radio" name="q18" value="0">Неверно.</label>
+                <label><input type="radio" name="q18" value="1">Верно.</label>
+            </div>
+            <!--19-->
+            <div class="test">
+                <h3>19. В будущем меня ждет больше хороших дней, чем плохих.</h3>
+                <label><input type="radio" name="q19" value="1">Неверно.</label>
+                <label><input type="radio" name="q19" value="0">Верно.</label>
+            </div>
+            <!--20-->
+            <div class="test">
+                <h3>20. Бесполезно пытаться получить то, чего я хочу,
+                     потому что, вероятно, я не добьюсь этого.</h3>
+                <label><input type="radio" name="q20" value="0">Неверно.</label>
+                <label><input type="radio" name="q20" value="1">Верно.</label>
+            </div>
+            <button type="button" id="submit-btn">Получить результат</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // Вопросы первой группы (вычитаемые)
+            const firstGroup = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            // Вопросы второй группы (прибавляемые)
+            const secondGroup = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+            
+            let firstSum = 0;
+            let secondSum = 0;
+            
+            // Считаем сумму по первой группе
+            firstGroup.forEach(q => {
+                const selected = document.querySelector(`input[name="q${q}"]:checked`);
+                if (selected) {
+                    firstSum += parseInt(selected.value);
+                }
+            });
+            
+            // Считаем сумму по второй группе
+            secondGroup.forEach(q => {
+                const selected = document.querySelector(`input[name="q${q}"]:checked`);
+                if (selected) {
+                    secondSum += parseInt(selected.value);
+                }
+            });
+            
+            // Вычисляем итоговый результат
+            const totalScore = secondSum + firstSum;
+            
+            // Интерпретация результатов
+            let interpretation = "";
+            if (totalScore >= 15) {
+                interpretation = "Безнадежность тяжелая.";
+            } else if (totalScore >=9) {
+                interpretation = "Безнадежность умеренная.";
+            } else if (totalScore  >=4 ) {
+                interpretation = "Безнадежность легкая.";
+            } else {
+                interpretation = "Безнадежность не выявлена.";
+            }
+            
+            // Показываем результат
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h2>Ваш результат: ${totalScore} баллов</h2>
+                <h2>${interpretation}</h2>
+            `;
+            resultDiv.style.display = 'block';
+            
+            // Прокручиваем страницу к результату
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+{% endblock %}
+
